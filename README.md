@@ -27,6 +27,7 @@ GSAP, ScrollTrigger, SplitText, ScrambleText and Lenis are vendored in `assets/v
 | Program rows: the preview image follows the cursor | Previews each program without leaving the list |
 | Dogs: pinned horizontal lineup + progress bar | Browsing a lineup, with your position shown |
 | Process line draws and step markers light up | Shows progress through the process |
+| Hero photo ripples around the cursor (WebGL, OGL flowmap) | The first image responds to the visitor's presence |
 | Footer wordmark rises | Closes the page |
 | Mono labels decode (ScrambleText) | A field-dossier feel that marks each new section |
 | Links roll their characters on hover | Shows the link will respond, without colour |
@@ -36,6 +37,12 @@ The site degrades cleanly:
 - **No JS.** All content is visible and the dog lineup becomes a native swipe.
 - **Reduced motion.** Lenis is off, there are no scroll animations, and nothing is hidden.
 - **Touch.** No custom cursor or magnetic effects.
+
+### Hero ripple
+
+The source is `src/hero-ripple.js` (OGL), bundled to `assets/js/hero-ripple.js`. After editing it, rebuild with `npm install && npm run build:ripple`.
+It runs only on mouse/trackpad devices and is off under reduced motion. WebGL needs a CORS-clean image, so if the image CDN doesn't send CORS headers the hero quietly keeps the plain photo.
+Self-hosting the images (`scripts/self-host-images.py`) guarantees the ripple works.
 
 ## Content to confirm before launch
 

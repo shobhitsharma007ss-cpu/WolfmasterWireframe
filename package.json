@@ -1,0 +1,11 @@
+{
+  "name": "wolfmaster-k9",
+  "private": true,
+  "scripts": {
+    "build:ripple": "esbuild src/hero-ripple.js --bundle --minify --format=iife --target=es2018 --outfile=assets/js/hero-ripple.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "ogl": "^1.0.11"
+  }
+}

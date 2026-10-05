@@ -134,7 +134,7 @@
   /* ---------- Preloader → hero entrance ---------- */
   function heroIn() {
     return gsap.timeline()
-      .from(".hero__media img", { scale: 1.22, duration: 2.4, ease: "power3.out" }, 0)
+      .from(".hero__media", { scale: 1.22, duration: 2.4, ease: "power3.out" }, 0)
       .from(".hero__line > span", { yPercent: 118, duration: 1.3, stagger: 0.12, ease: "power4.out" }, 0.05)
       .from(".hero__aside > *, .hero__bar", { y: 24, opacity: 0, duration: 1, stagger: 0.08, ease: "power3.out" }, 0.5)
       .from(".nav", { opacity: 0, duration: 1 }, 0.4);
@@ -172,7 +172,7 @@
   if (reduced) return; // Layout and content stay intact; no scroll-driven motion.
 
   /* ---------- Hero exit: image sinks, type lifts ---------- */
-  gsap.to(".hero__media img", {
+  gsap.to(".hero__media", {
     yPercent: 12, ease: "none",
     scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true }
   });
@@ -346,6 +346,10 @@
 
   /* ---------- Pointer-only extras ---------- */
   if (finePointer) {
+    // Hero photo ripples around the cursor (WebGL; falls back to the plain image)
+    var heroImg = document.querySelector(".hero__media img");
+    if (window.initHeroRipple && heroImg) window.initHeroRipple(heroImg);
+
     // Cursor
     var cur = document.querySelector(".cursor");
     var cx = gsap.quickTo(cur, "x", { duration: 0.25, ease: "power3" });
