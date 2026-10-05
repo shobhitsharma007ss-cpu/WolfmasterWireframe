@@ -3,466 +3,437 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wolfmaster K9 | Rajender "Wolfmaster Bunty" Chauhan, Elite Dog Training India</title>
-  <meta name="description" content="Wolfmaster K9, founded by Rajender 'Wolfmaster Bunty' Chauhan. Elite protection dogs, obedience, behaviour and PSA sport training in Delhi NCR since 2002.">
-  <meta property="og:title" content="Wolfmaster K9 | Rajender 'Wolfmaster Bunty' Chauhan">
-  <meta property="og:description" content="Elite protection dog training in India since 2002.">
-  <meta name="theme-color" content="#0a0a0a">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Wolfmaster K9 — Rajender “Wolfmaster Bunty” Chauhan</title>
+  <meta name="description" content="Wolfmaster K9 by Rajender ‘Wolfmaster Bunty’ Chauhan. Protection dogs, obedience, behaviour and PSA-standard training in Delhi NCR since 2002.">
+  <meta property="og:title" content="Wolfmaster K9 — Controlled power.">
+  <meta property="og:description" content="Protection dogs and PSA-standard training by Rajender ‘Wolfmaster Bunty’ Chauhan. Since 2002.">
+  <meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084426_3af97fd1-8246-4719-8a52-5fd19acb2244.png">
+  <meta name="theme-color" content="#0a0908">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preload" href="assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084426_3af97fd1-8246-4719-8a52-5fd19acb2244.png" as="image" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
-    <div class="nav__inner container">
-      <a href="#top" class="brand" aria-label="Wolfmaster K9 home">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><path d="M8 6l8 10 8-6 8 6 8-10-2 18c0 9-6 16-14 18C16 40 10 33 10 24L8 6z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 24l3 3M30 24l-3 3M21 33h6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-        </span>
-        <span class="brand__text">WOLFMASTER<em>K9</em></span>
-      </a>
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__word">Wolfmaster</span>
+      <span class="loader__count"><span id="loaderCount">000</span></span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
 
-      <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#protection">Protection Dogs</a>
-        <a href="#psa">PSA &amp; Events</a>
-        <a href="#gallery">Media</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn--gold nav__cta">Book a Consultation</a>
-      </nav>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="nav__brand" aria-label="Wolfmaster K9, back to top">Wolfmaster<sup>K9</sup></a>
+    <span class="nav__meta mono">Est. 2002 — Delhi NCR, India</span>
+    <div class="nav__right">
+      <a href="#enquire" class="nav__link mono">Enquire</a>
+      <button class="nav__menu mono" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="nav__menu-txt">Menu</span><span class="nav__menu-icon" aria-hidden="true"><i></i><i></i></span>
       </button>
     </div>
   </header>
 
+  <!-- Full-screen menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__media" aria-hidden="true">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_f18b8ba6-2092-425e-8f72-b6a49477fd1a_min.webp" alt="" data-menu-img="0" class="is-active">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_97fa7049-3609-403c-b1aa-54b55bbc49d7_min.webp" alt="" data-menu-img="1">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_fa48e9de-16e5-4a38-aae1-f204495ac7ca_min.webp" alt="" data-menu-img="2">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_8b51b76a-778b-486d-ae38-faaa03838ff4_min.webp" alt="" data-menu-img="3">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_6f1ade1c-d4d5-4b64-8b67-9b8c425bc1fc_min.webp" alt="" data-menu-img="4">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_a9151537-ba18-47e4-bc92-e31ae6e37974_min.webp" alt="" data-menu-img="5">
+    </div>
+    <nav class="menu__nav" aria-label="Primary">
+      <a href="#philosophy" data-i="0"><span class="mono">01</span>Philosophy</a>
+      <a href="#trainer" data-i="1"><span class="mono">02</span>The Trainer</a>
+      <a href="#programs" data-i="2"><span class="mono">03</span>Programs</a>
+      <a href="#dogs" data-i="3"><span class="mono">04</span>The Dogs</a>
+      <a href="#psa" data-i="4"><span class="mono">05</span>PSA</a>
+      <a href="#enquire" data-i="5"><span class="mono">06</span>Enquire</a>
+    </nav>
+    <div class="menu__foot mono">
+      <a href="tel:+919873335698">+91 98733 35698</a>
+      <a href="mailto:wolfmasterk9@gmail.com">wolfmasterk9@gmail.com</a>
+      <span class="menu__socials">
+        <a href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/Wolfmasterk9/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.youtube.com/results?search_query=wolfmaster+k9+rajender+chauhan" target="_blank" rel="noopener">YouTube</a>
+      </span>
+    </div>
+  </div>
+
   <main id="top">
 
-    <!-- ============ HERO ============ -->
+    <!-- ========== HERO ========== -->
     <section class="hero">
-      <!-- Swap for a real video: put hero.mp4 in assets/img and uncomment
-      <video class="hero__video" autoplay muted loop playsinline poster="assets/img/hero.jpg">
-        <source src="assets/img/hero.mp4" type="video/mp4">
-      </video> -->
-      <div class="hero__media ph" data-src="assets/img/hero.jpg" data-label="HERO: Bunty working a Malinois in bite suit / at dusk"></div>
-      <div class="hero__shade"></div>
+      <div class="hero__media">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084426_3af97fd1-8246-4719-8a52-5fd19acb2244.png" alt="A Belgian Malinois standing alert on a night training field, rim-lit by floodlights" fetchpriority="high">
+      </div>
+      <div class="hero__veil"></div>
 
-      <div class="container hero__content">
-        <p class="eyebrow reveal">Rajender “Wolfmaster Bunty” Chauhan · Est. 2002</p>
-        <h1 class="hero__title reveal">
-          Elite Protection.<br>
-          <span class="gold">Absolute Control.</span>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__line"><span>Controlled</span></span>
+          <span class="hero__line hero__line--serif"><span>power.</span></span>
         </h1>
-        <p class="hero__lead reveal">
-          India's premier working-dog program. Protection dogs, obedience and
-          PSA-standard training from one of the country's most respected K9 trainers.
+        <div class="hero__aside">
+          <p>Protection dogs, obedience and PSA-standard training by <strong>Rajender “Wolfmaster Bunty” Chauhan</strong>, one of India's most respected working-dog trainers.</p>
+          <a href="#enquire" class="link-arrow">Begin an enquiry <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero__bar mono">
+        <span>N 28.41° — E 77.31°</span>
+        <span class="hero__scroll"><i></i>Scroll</span>
+        <span>Since 2002</span>
+      </div>
+    </section>
+
+    <!-- ========== PHILOSOPHY ========== -->
+    <section class="philosophy" id="philosophy">
+      <div class="wrap">
+        <p class="label mono"><span>(01)</span> The Philosophy</p>
+        <p class="manifesto" data-scrub-words>
+          A protection dog is not an aggressive dog. It is a clear mind and a stable nerve under
+          <em>absolute control.</em> Calm with your children. Decisive when it matters. That is the only kind of dog we build.
         </p>
-        <div class="hero__ctas reveal">
-          <a href="#contact" class="btn btn--gold">Book a Consultation</a>
-          <a href="#protection" class="btn btn--ghost">View Protection Dogs</a>
-        </div>
-      </div>
 
-      <a href="#trust" class="hero__scroll" aria-label="Scroll down"><span></span></a>
-    </section>
-
-    <!-- ============ TRUST STRIP ============ -->
-    <section class="trust" id="trust">
-      <div class="container trust__grid">
-        <div class="stat reveal">
-          <span class="stat__num" data-count="2002">2002</span>
-          <span class="stat__label">Training dogs since</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num" data-count="20" data-suffix="+">20+</span>
-          <span class="stat__label">Years in the field</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num">PSA</span>
-          <span class="stat__label">Competitor &amp; Decoy</span>
-        </div>
-        <div class="stat reveal">
-          <span class="stat__num" data-count="1000" data-suffix="+">1000+</span>
-          <span class="stat__label">Dogs trained <small>(confirm)</small></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section class="section about" id="about">
-      <div class="container split">
-        <div class="split__media reveal">
-          <div class="ph ph--tall" data-src="assets/img/bunty-portrait.jpg" data-label="PORTRAIT: Rajender Chauhan with his dog"></div>
-          <div class="about__badge">
-            <span class="about__badge-num">20+</span>
-            <span class="about__badge-txt">Years<br>Building<br>Working Dogs</span>
+        <dl class="figures">
+          <div class="figure">
+            <dt class="mono">In the field since</dt>
+            <dd data-count="2002" data-from="1980">2002</dd>
           </div>
-        </div>
-        <div class="split__body">
-          <p class="eyebrow reveal">The Man Behind The Name</p>
-          <h2 class="h2 reveal">Rajender Chauhan.<br><span class="gold">Wolfmaster Bunty.</span></h2>
-          <p class="reveal">
-            Rajender Chauhan, known across India's dog community as <strong>Wolfmaster Bunty</strong>, has spent more than
-            two decades building working dogs. He has trained dogs since 2002. As founder and director of
-            <strong>Wolfmaster K9</strong>, he has become one of the best-known names in Indian dog training, with a
-            reputation that extends well beyond India.
-          </p>
-          <p class="reveal">
-            He works as a <strong>dog behaviourist, Protection Sports Association (PSA) competitor and PSA decoy</strong>,
-            and he has brought international-standard protection sport to India by hosting PSA trials and decoy
-            certification camps. His approach is simple. A dog should be clear, confident and
-            completely under control, whether it is guarding a family or competing on the field.
-          </p>
-          <ul class="checks reveal">
-            <li>Founder &amp; Director, Wolfmaster K9</li>
-            <li>PSA Competitor &amp; Decoy</li>
-            <li>Canine Behaviourist</li>
-            <li>Host of PSA Trials &amp; Decoy Camps in India</li>
-          </ul>
-          <a href="#contact" class="btn btn--outline reveal">Train With Bunty</a>
-        </div>
+          <div class="figure">
+            <dt class="mono">Years of practice</dt>
+            <dd><span data-count="20">20</span>+</dd>
+          </div>
+          <div class="figure">
+            <dt class="mono">Protection Sports Assoc.</dt>
+            <dd>Decoy</dd>
+          </div>
+          <div class="figure">
+            <dt class="mono">Based in</dt>
+            <dd>Delhi <em>NCR</em></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <!-- ============ QUOTE BAND ============ -->
-    <section class="band">
-      <div class="band__media ph" data-src="assets/img/band.jpg" data-label="WIDE: dog mid-leap, bite work"></div>
-      <div class="band__shade"></div>
-      <div class="container band__content">
-        <blockquote class="reveal">
-          “A protection dog is not aggressive. It is <span class="gold">controlled power</span>.
-          Calm at home, decisive when it matters.”
-        </blockquote>
-        <cite class="reveal">— Rajender “Wolfmaster Bunty” Chauhan <span class="todo">[replace with a real quote]</span></cite>
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Family Protection</span><em>—</em><span>Executive Protection</span><em>—</em><span>PSA Sport</span><em>—</em><span>Behaviour</span><em>—</em><span>Obedience</span><em>—</em><span>Decoy Work</span><em>—</em>
+        <span>Family Protection</span><em>—</em><span>Executive Protection</span><em>—</em><span>PSA Sport</span><em>—</em><span>Behaviour</span><em>—</em><span>Obedience</span><em>—</em><span>Decoy Work</span><em>—</em>
       </div>
-    </section>
+    </div>
 
-    <!-- ============ PROGRAMS ============ -->
-    <section class="section" id="programs">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Training Programs</p>
-          <h2 class="h2 reveal">Built For Every Mission</h2>
-          <p class="section__sub reveal">From a family's first puppy to a fully titled protection dog. Each program is matched to the dog, the handler and the goal.</p>
-        </header>
+    <!-- ========== TRAINER ========== -->
+    <section class="trainer" id="trainer">
+      <figure class="trainer__media" data-clip>
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_97fa7049-3609-403c-b1aa-54b55bbc49d7.png" alt="A handler walking at dawn through misty farmland with a German Shepherd heeling at his side" loading="lazy" data-parallax>
+        <figcaption class="fig-cap mono">Fig. 01 — Heel work at first light</figcaption>
+      </figure>
 
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg></div>
-            <h3>Family Protection Dogs</h3>
-            <p>Fully trained guardians that live calmly in your home, are safe with children and step up only on command or real threat.</p>
-            <a href="#protection" class="card__link">Learn more →</a>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 20v-2a6 6 0 0112 0v2M10 8a4 4 0 100-.01M17 11l2 2 4-4"/></svg></div>
-            <h3>Personal &amp; Executive Protection</h3>
-            <p>High-drive, scenario-proofed dogs for business owners, VIPs and estates. Trained for vehicles, crowds and real-world stress.</p>
-            <a href="#protection" class="card__link">Learn more →</a>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
-            <h3>Obedience &amp; Off-Leash Control</h3>
-            <p>Precise, reliable obedience from basic manners to off-leash control in high-distraction environments.</p>
-            <a href="#contact" class="card__link">Enquire →</a>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-            <h3>Behaviour Rehabilitation</h3>
-            <p>Aggression, fear, reactivity and anxiety handled by an experienced behaviourist, with a clear plan for the owner.</p>
-            <a href="#contact" class="card__link">Enquire →</a>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M6 3h12l-1 7a5 5 0 01-10 0L6 3zM12 15v4M8 21h8"/></svg></div>
-            <h3>PSA Sport &amp; Decoy Training</h3>
-            <p>Protection Sports Association preparation for dogs, handlers and decoys, coached by a working PSA decoy and competitor.</p>
-            <a href="#psa" class="card__link">Learn more →</a>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12H3zM9 21v-6h6v6"/></svg></div>
-            <h3>Board &amp; Train</h3>
-            <p>Residential training at our facility with daily structured sessions, socialisation and a full handler handover.</p>
-            <a href="#contact" class="card__link">Enquire →</a>
-          </article>
+      <div class="wrap trainer__grid">
+        <div class="trainer__head">
+          <p class="label mono"><span>(02)</span> The Trainer</p>
+          <h2 class="display" data-split>Rajender<br>Chauhan</h2>
+          <p class="trainer__alias serif">“Wolfmaster Bunty”</p>
+        </div>
+
+        <div class="trainer__body">
+          <p class="lead" data-fade>Over two decades, Rajender Chauhan has become one of the best-known names in Indian dog training, with a reputation that reaches well beyond the country's borders.</p>
+          <p data-fade>He has trained dogs professionally since 2002. As founder and director of Wolfmaster K9 he works as a canine behaviourist, a Protection Sports Association competitor and a PSA decoy. He has also brought international-standard protection sport to India by hosting PSA trials and decoy certification camps.</p>
+          <p data-fade>His method is uncompromising. Every dog must be clear, confident and completely under control, whether it is guarding a family home or working on the trial field.</p>
+
+          <dl class="dossier" data-fade>
+            <div><dt class="mono">Role</dt><dd>Founder &amp; Director, Wolfmaster K9</dd></div>
+            <div><dt class="mono">Discipline</dt><dd>PSA Competitor &amp; Decoy</dd></div>
+            <div><dt class="mono">Practice</dt><dd>Canine Behaviourist</dd></div>
+            <div><dt class="mono">In the field</dt><dd>Since 2002</dd></div>
+            <div><dt class="mono">Base</dt><dd>Faridabad, Delhi NCR</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROTECTION DOGS ============ -->
-    <section class="section section--dark" id="protection">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Protection Dogs</p>
-          <h2 class="h2 reveal">The Wolfmaster Standard</h2>
-          <p class="section__sub reveal">Every Wolfmaster protection dog is selected for genetics and nerve, then proofed until its behaviour is predictable in any setting.</p>
-        </header>
+    <!-- ========== PROGRAMS ========== -->
+    <section class="programs" id="programs">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label mono"><span>(03)</span> Programs</p>
+          <h2 class="display" data-split>Six disciplines.<br><em class="serif">One standard.</em></h2>
+        </div>
 
-        <div class="breeds">
-          <article class="breed reveal">
-            <div class="ph ph--breed" data-src="assets/img/malinois.jpg" data-label="Belgian Malinois"></div>
-            <div class="breed__body">
-              <h3>Belgian Malinois</h3>
-              <p>Explosive drive, agility and focus. The world's choice for elite protection work.</p>
+        <ul class="rows" id="rows">
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_fa48e9de-16e5-4a38-aae1-f204495ac7ca_min.webp">
+            <span class="row__num mono">01</span>
+            <h3 class="row__title">Family Protection</h3>
+            <p class="row__desc">Guardians that live calmly in your home, are safe with children and act only on command or real threat.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_fa48e9de-16e5-4a38-aae1-f204495ac7ca_min.webp" alt="" loading="lazy">
+          </li>
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_ec7385c8-4449-4e96-8545-4f66a6498ffd_min.webp">
+            <span class="row__num mono">02</span>
+            <h3 class="row__title">Executive Protection</h3>
+            <p class="row__desc">Scenario-proofed dogs for principals, estates and business owners: vehicles, crowds and public spaces.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_ec7385c8-4449-4e96-8545-4f66a6498ffd_min.webp" alt="" loading="lazy">
+          </li>
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_46d91bc3-54e4-45a0-8154-4b25d3044f11_min.webp">
+            <span class="row__num mono">03</span>
+            <h3 class="row__title">Obedience</h3>
+            <p class="row__desc">Precise, reliable obedience, from foundations to off-leash control under heavy distraction.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_46d91bc3-54e4-45a0-8154-4b25d3044f11_min.webp" alt="" loading="lazy">
+          </li>
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_f18b8ba6-2092-425e-8f72-b6a49477fd1a_min.webp">
+            <span class="row__num mono">04</span>
+            <h3 class="row__title">Behaviour</h3>
+            <p class="row__desc">Aggression, fear and reactivity resolved by an experienced behaviourist, with a clear plan for the owner.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_f18b8ba6-2092-425e-8f72-b6a49477fd1a_min.webp" alt="" loading="lazy">
+          </li>
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_a9151537-ba18-47e4-bc92-e31ae6e37974_min.webp">
+            <span class="row__num mono">05</span>
+            <h3 class="row__title">PSA &amp; Decoy</h3>
+            <p class="row__desc">Protection Sports Association preparation for dogs, handlers and decoys, coached by a working PSA decoy.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_a9151537-ba18-47e4-bc92-e31ae6e37974_min.webp" alt="" loading="lazy">
+          </li>
+          <li class="row" data-img="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084255_72cba74c-4a63-4de8-b19e-0beb8b39e9c8_min.webp">
+            <span class="row__num mono">06</span>
+            <h3 class="row__title">Board &amp; Train</h3>
+            <p class="row__desc">Puppy foundations and residential programs, with structured daily work and a full handler handover.</p>
+            <img class="row__thumb" src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084255_72cba74c-4a63-4de8-b19e-0beb8b39e9c8_min.webp" alt="" loading="lazy">
+          </li>
+        </ul>
+      </div>
+      <div class="rows-float" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- ========== THE DOGS (pinned horizontal) ========== -->
+    <section class="dogs" id="dogs">
+      <div class="dogs__pin">
+        <div class="dogs__track">
+          <div class="dogs__intro">
+            <p class="label mono"><span>(04)</span> The Dogs</p>
+            <h2 class="display">Bred for nerve.<br><em class="serif">Proofed for life.</em></h2>
+            <p>Every Wolfmaster dog is selected for genetics and temperament, then proofed until its behaviour is predictable anywhere.</p>
+            <span class="dogs__hint mono">Keep scrolling →</span>
+          </div>
+
+          <article class="dog">
+            <figure class="dog__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084427_f18b8ba6-2092-425e-8f72-b6a49477fd1a.png" alt="Belgian Malinois portrait" loading="lazy"></figure>
+            <div class="dog__meta">
+              <span class="mono">01 / 04</span>
+              <h3 class="serif">Belgian Malinois</h3>
+              <dl><div><dt class="mono">Origin</dt><dd>Belgium</dd></div><div><dt class="mono">Best for</dt><dd>Executive &amp; family protection</dd></div></dl>
+              <p>Explosive drive, agility and focus. The working-dog world's first choice.</p>
             </div>
           </article>
-          <article class="breed reveal">
-            <div class="ph ph--breed" data-src="assets/img/gsd.jpg" data-label="German Shepherd"></div>
-            <div class="breed__body">
-              <h3>German Shepherd</h3>
-              <p>Loyal, balanced and intelligent. A strong family guardian with real presence.</p>
+          <article class="dog">
+            <figure class="dog__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_8b51b76a-778b-486d-ae38-faaa03838ff4.png" alt="German Shepherd portrait" loading="lazy"></figure>
+            <div class="dog__meta">
+              <span class="mono">02 / 04</span>
+              <h3 class="serif">German Shepherd</h3>
+              <dl><div><dt class="mono">Origin</dt><dd>Germany</dd></div><div><dt class="mono">Best for</dt><dd>Family guardian</dd></div></dl>
+              <p>Loyal, balanced and intelligent, with a commanding presence at home.</p>
             </div>
           </article>
-          <article class="breed reveal">
-            <div class="ph ph--breed" data-src="assets/img/dutchie.jpg" data-label="Dutch Shepherd"></div>
-            <div class="breed__body">
-              <h3>Dutch Shepherd</h3>
+          <article class="dog">
+            <figure class="dog__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084428_3e10776a-8e9a-4e64-9595-dd5bfd305e76.png" alt="Dutch Shepherd portrait" loading="lazy"></figure>
+            <div class="dog__meta">
+              <span class="mono">03 / 04</span>
+              <h3 class="serif">Dutch Shepherd</h3>
+              <dl><div><dt class="mono">Origin</dt><dd>Netherlands</dd></div><div><dt class="mono">Best for</dt><dd>Personal protection &amp; sport</dd></div></dl>
               <p>Hardy and versatile, with a clear head under pressure.</p>
             </div>
           </article>
-          <article class="breed reveal">
-            <div class="ph ph--breed" data-src="assets/img/rottweiler.jpg" data-label="Rottweiler / Doberman"></div>
-            <div class="breed__body">
-              <h3>Rottweiler &amp; Doberman</h3>
-              <p>Powerful, natural deterrents. Imposing presence and devoted to family.</p>
+          <article class="dog">
+            <figure class="dog__img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084501_559f9b4d-77fb-495f-a8cc-f04ced742a6b.png" alt="Doberman portrait" loading="lazy"></figure>
+            <div class="dog__meta">
+              <span class="mono">04 / 04</span>
+              <h3 class="serif">Doberman</h3>
+              <dl><div><dt class="mono">Origin</dt><dd>Germany</dd></div><div><dt class="mono">Best for</dt><dd>Estate &amp; home protection</dd></div></dl>
+              <p>Elegant, powerful and a natural deterrent. Devoted to its family.</p>
             </div>
           </article>
         </div>
-
-        <div class="features">
-          <div class="feature reveal"><span>01</span><h4>Stable Temperament</h4><p>Social, clear-headed and safe around family, guests and children.</p></div>
-          <div class="feature reveal"><span>02</span><h4>On/Off Switch</h4><p>Engages on command, releases on command. Every single time.</p></div>
-          <div class="feature reveal"><span>03</span><h4>Scenario Proofed</h4><p>Home invasion, vehicle, car-jack and street scenarios, not just the training field.</p></div>
-          <div class="feature reveal"><span>04</span><h4>Health Checked</h4><p>Vet-screened, vaccinated and ready to join your home.</p></div>
-          <div class="feature reveal"><span>05</span><h4>Handler Training</h4><p>You learn to handle your dog properly before it goes home.</p></div>
-          <div class="feature reveal"><span>06</span><h4>Lifetime Support</h4><p>Follow-up sessions and direct access to the Wolfmaster team.</p></div>
-        </div>
+        <div class="dogs__progress" aria-hidden="true"><span></span></div>
       </div>
     </section>
 
-    <!-- ============ PROCESS ============ -->
-    <section class="section" id="process">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">How It Works</p>
-          <h2 class="h2 reveal">From Consultation To Handover</h2>
-        </header>
-        <ol class="steps">
-          <li class="step reveal"><span class="step__num">1</span><h4>Consultation</h4><p>We learn about your home, family, lifestyle and security needs.</p></li>
-          <li class="step reveal"><span class="step__num">2</span><h4>Assessment &amp; Matching</h4><p>Your own dog is evaluated, or we match you with the right dog.</p></li>
-          <li class="step reveal"><span class="step__num">3</span><h4>Training</h4><p>A structured program covering obedience, protection and real-world proofing.</p></li>
-          <li class="step reveal"><span class="step__num">4</span><h4>Handover</h4><p>One-on-one handler sessions and integration into your home.</p></li>
-          <li class="step reveal"><span class="step__num">5</span><h4>Lifetime Support</h4><p>Ongoing tune-ups and advice whenever you need it.</p></li>
+    <!-- ========== STANDARD ========== -->
+    <section class="standard">
+      <figure class="standard__media">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_fa48e9de-16e5-4a38-aae1-f204495ac7ca.png" alt="A Belgian Malinois lying watchfully at the entrance of a modern villa at dusk" loading="lazy" data-parallax>
+      </figure>
+      <div class="standard__over wrap">
+        <p class="label mono"><span>(05)</span> The Wolfmaster Standard</p>
+        <h2 class="display" data-split>Calm at home.<br><em class="serif">Decisive at the door.</em></h2>
+      </div>
+
+      <div class="wrap">
+        <ol class="tenets">
+          <li data-fade><span class="serif">i.</span><h4>Stable temperament</h4><p>Social and clear-headed with family, guests and children.</p></li>
+          <li data-fade><span class="serif">ii.</span><h4>On / off switch</h4><p>Engages on command and releases on command. Every time.</p></li>
+          <li data-fade><span class="serif">iii.</span><h4>Scenario proofed</h4><p>Home, vehicle and street scenarios, not only the training field.</p></li>
+          <li data-fade><span class="serif">iv.</span><h4>Health screened</h4><p>Vet-checked, vaccinated and ready to join your household.</p></li>
+          <li data-fade><span class="serif">v.</span><h4>Handler trained</h4><p>You learn to handle your dog properly before it comes home.</p></li>
+          <li data-fade><span class="serif">vi.</span><h4>Lifetime support</h4><p>Tune-ups and direct access to the Wolfmaster team.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- ============ PSA & EVENTS ============ -->
-    <section class="section section--dark" id="psa">
-      <div class="container split split--rev">
-        <div class="split__body">
-          <p class="eyebrow reveal">Protection Sports Association</p>
-          <h2 class="h2 reveal">Bringing World-Class<br><span class="gold">Protection Sport</span> To India</h2>
-          <p class="reveal">
-            PSA is one of the most demanding protection sports in the world. It tests a dog's courage, control and
-            nerve in realistic scenarios. Wolfmaster K9 has been central to growing PSA in India by hosting
-            trials and decoy certification camps with international judges and instructors.
-          </p>
-
-          <ul class="timeline">
-            <li class="reveal">
-              <span class="timeline__date">Dec 2024</span>
-              <div><h4>PSA Decoy Certification Camp, New Delhi</h4><p>Instructed by Jeff Riccio. Hosted by Rajender Chauhan / Wolfmaster K9.</p></div>
-            </li>
-            <li class="reveal">
-              <span class="timeline__date">Ongoing</span>
-              <div><h4>PSA Trials in India</h4><p>Multiple PSA trials hosted by Wolfmaster K9, with Rajender serving as decoy.</p></div>
-            </li>
-            <li class="reveal">
-              <span class="timeline__date">2002</span>
-              <div><h4>The Beginning</h4><p>Rajender starts his journey as a professional dog trainer.</p></div>
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn--gold reveal">Join The Next Trial</a>
+    <!-- ========== PROCESS ========== -->
+    <section class="process">
+      <div class="wrap process__grid">
+        <div class="process__head">
+          <p class="label mono"><span>(06)</span> Process</p>
+          <h2 class="display" data-split>First call<br>to <em class="serif">lifetime.</em></h2>
         </div>
-        <div class="split__media reveal">
-          <div class="ph ph--tall" data-src="assets/img/psa-decoy.jpg" data-label="PSA: Bunty in decoy suit catching a dog"></div>
-        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__n mono">01</span><div><h4>Consultation</h4><p>We learn about your home, family, routine and security needs.</p></div></li>
+          <li class="step"><span class="step__n mono">02</span><div><h4>Assessment &amp; matching</h4><p>We evaluate your dog, or match you with the right one.</p></div></li>
+          <li class="step"><span class="step__n mono">03</span><div><h4>Training</h4><p>A structured program covering obedience, protection and real-world proofing.</p></div></li>
+          <li class="step"><span class="step__n mono">04</span><div><h4>Handover</h4><p>One-on-one handler sessions and integration into your home.</p></div></li>
+          <li class="step"><span class="step__n mono">05</span><div><h4>Lifetime support</h4><p>Ongoing tune-ups and advice whenever you need it.</p></div></li>
+          <span class="steps__line" aria-hidden="true"><i></i></span>
+        </ol>
       </div>
     </section>
 
-    <!-- ============ ACCOLADES ============ -->
-    <section class="section accolades">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Recognition</p>
-          <h2 class="h2 reveal">Global Accolades</h2>
-          <p class="section__sub reveal">Recognised in India and abroad for training excellence. <em class="todo">[Replace with confirmed awards, titles and features]</em></p>
-        </header>
-        <div class="awards">
-          <div class="award reveal"><span class="award__icon">★</span><h4>PSA Certified Decoy</h4><p>Protection Sports Association</p></div>
-          <div class="award reveal"><span class="award__icon">★</span><h4>International Award</h4><p class="todo">[Award name · Year]</p></div>
-          <div class="award reveal"><span class="award__icon">★</span><h4>Competition Title</h4><p class="todo">[Title · Event · Year]</p></div>
-          <div class="award reveal"><span class="award__icon">★</span><h4>Media Feature</h4><p class="todo">[Publication / Channel]</p></div>
-        </div>
+    <!-- ========== PSA ========== -->
+    <section class="psa" id="psa">
+      <figure class="psa__media" data-clip>
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084500_6f1ade1c-d4d5-4b64-8b67-9b8c425bc1fc.png" alt="A protection sport trial at night under stadium floodlights" loading="lazy" data-parallax>
+        <figcaption class="psa__title wrap">
+          <p class="label mono"><span>(07)</span> Protection Sports Association</p>
+          <h2 class="display" data-split>World-class<br>protection sport,<br><em class="serif">now in India.</em></h2>
+        </figcaption>
+      </figure>
+
+      <div class="wrap psa__grid">
+        <p class="lead" data-fade>PSA is one of the most demanding protection sports in the world. It tests a dog's courage, control and nerve in realistic scenarios. Wolfmaster K9 has been central to growing the sport in India by hosting trials and decoy certification camps with international instructors.</p>
+
+        <ul class="record">
+          <li data-fade>
+            <span class="mono">Dec 2024</span>
+            <h4>PSA Decoy Certification Camp</h4>
+            <p>New Delhi. Instructed by Jeff Riccio, hosted by Rajender Chauhan / Wolfmaster K9.</p>
+          </li>
+          <li data-fade>
+            <span class="mono">Ongoing</span>
+            <h4>PSA Trials in India</h4>
+            <p>Multiple trials hosted by Wolfmaster K9, with Rajender working as decoy.</p>
+          </li>
+          <li data-fade>
+            <span class="mono">2002</span>
+            <h4>The beginning</h4>
+            <p>Rajender begins his career as a professional dog trainer.</p>
+          </li>
+          <!-- ADD CONFIRMED AWARDS / INTERNATIONAL TITLES HERE, same markup:
+          <li data-fade><span class="mono">YEAR</span><h4>Award or title</h4><p>Event, country.</p></li>
+          -->
+        </ul>
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS ============ -->
-    <section class="section section--dark" id="testimonials">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Clients</p>
-          <h2 class="h2 reveal">Trusted By Families &amp; Professionals</h2>
-        </header>
-        <div class="slider" id="slider">
-          <div class="slider__track">
-            <figure class="quote is-active">
-              <blockquote>“Our Malinois is gentle with the kids and completely reliable on command. Bunty sir changed the way we think about dogs.”</blockquote>
-              <figcaption>— Client name, Gurugram <span class="todo">[placeholder]</span></figcaption>
-            </figure>
-            <figure class="quote">
-              <blockquote>“He fixed severe aggression issues that two other trainers couldn't. Real knowledge, real results.”</blockquote>
-              <figcaption>— Client name, New Delhi <span class="todo">[placeholder]</span></figcaption>
-            </figure>
-            <figure class="quote">
-              <blockquote>“Training under a PSA decoy of his level is a different experience. My dog and I both grew.”</blockquote>
-              <figcaption>— PSA Handler <span class="todo">[placeholder]</span></figcaption>
-            </figure>
-          </div>
-          <div class="slider__dots" role="tablist" aria-label="Testimonials"></div>
-        </div>
+    <!-- TESTIMONIALS: enable once real, approved client quotes are available.
+    <section class="voices">
+      <div class="wrap">
+        <p class="label mono"><span>(08)</span> Clients</p>
+        <blockquote class="serif">“Quote from a real client.”</blockquote>
+        <p class="mono">Client name — City</p>
       </div>
     </section>
+    -->
 
-    <!-- ============ MEDIA / SOCIAL ============ -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Media</p>
-          <h2 class="h2 reveal">Watch Wolfmaster In Action</h2>
-          <p class="section__sub reveal">Training sessions, PSA trials, decoy work and dog transformations, posted every week.</p>
-        </header>
-
-        <div class="gallery">
-          <a class="gallery__item g1 reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener"><div class="ph" data-src="assets/img/g1.jpg" data-label="Gallery 1"></div></a>
-          <a class="gallery__item reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener"><div class="ph" data-src="assets/img/g2.jpg" data-label="Gallery 2"></div></a>
-          <a class="gallery__item reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener"><div class="ph" data-src="assets/img/g3.jpg" data-label="Gallery 3"></div></a>
-          <a class="gallery__item reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener"><div class="ph" data-src="assets/img/g4.jpg" data-label="Gallery 4"></div></a>
-          <a class="gallery__item reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener"><div class="ph" data-src="assets/img/g5.jpg" data-label="Gallery 5"></div></a>
-        </div>
-
-        <div class="socials">
-          <a class="social reveal" href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-            <span><strong>Instagram</strong>@wolfmasterk9_rajender_chauhan</span>
-          </a>
-          <a class="social reveal" href="https://www.facebook.com/Wolfmasterk9/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>
-            <span><strong>Facebook</strong>/Wolfmasterk9</span>
-          </a>
-          <a class="social reveal" href="https://www.youtube.com/results?search_query=wolfmaster+k9+rajender+chauhan" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3V9z"/></svg>
-            <span><strong>YouTube</strong>Wolfmaster K9 <em class="todo">[add channel URL]</em></span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CTA ============ -->
+    <!-- ========== CTA ========== -->
     <section class="cta">
-      <div class="cta__media ph" data-src="assets/img/cta.jpg" data-label="CTA: dog sitting beside family / at gate"></div>
-      <div class="cta__shade"></div>
-      <div class="container cta__content">
-        <h2 class="h2 reveal">Your Family Deserves<br><span class="gold">The Best Protection.</span></h2>
-        <p class="reveal">Places are limited. Every client is screened personally.</p>
-        <a href="#contact" class="btn btn--gold reveal">Apply For A Consultation</a>
+      <figure class="cta__media"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/hf_20261005_084254_a9151537-ba18-47e4-bc92-e31ae6e37974.png" alt="A Belgian Malinois launching toward a decoy's bite sleeve" loading="lazy" data-parallax></figure>
+      <div class="cta__inner wrap">
+        <h2 class="display" data-split>Your family deserves<br><em class="serif">the best protection.</em></h2>
+        <p>Places are limited. Every client is screened personally.</p>
+        <a href="#enquire" class="magnet" data-magnet><span>Enquire</span></a>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact">
-      <div class="container split split--contact">
-        <div class="split__body">
-          <p class="eyebrow reveal">Contact</p>
-          <h2 class="h2 reveal">Speak With Wolfmaster K9</h2>
-          <p class="reveal">Tell us about your dog, or the dog you need. Our team will reply within 24 hours.</p>
-          <ul class="contact-list reveal">
-            <li><span>Phone / WhatsApp</span><a href="tel:+919873335698">+91 98733 35698</a></li>
-            <li><span>Email</span><a href="mailto:wolfmasterk9@gmail.com">wolfmasterk9@gmail.com</a></li>
-            <li><span>Location</span>Faridabad · Delhi NCR, India</li>
+    <!-- ========== ENQUIRE ========== -->
+    <section class="enquire" id="enquire">
+      <div class="wrap enquire__grid">
+        <div class="enquire__info">
+          <p class="label mono"><span>(08)</span> Enquire</p>
+          <h2 class="display" data-split>Speak with<br><em class="serif">Wolfmaster.</em></h2>
+          <ul class="contact">
+            <li><span class="mono">Phone / WhatsApp</span><a href="tel:+919873335698">+91 98733 35698</a></li>
+            <li><span class="mono">Email</span><a href="mailto:wolfmasterk9@gmail.com">wolfmasterk9@gmail.com</a></li>
+            <li><span class="mono">Location</span>Faridabad, Delhi NCR</li>
           </ul>
-          <a class="btn btn--whatsapp reveal" href="https://wa.me/919873335698?text=Hi%20Wolfmaster%20K9%2C%20I%27d%20like%20to%20enquire%20about%20training." target="_blank" rel="noopener">Chat on WhatsApp</a>
         </div>
 
-        <form class="form reveal" id="contactForm" novalidate>
-          <div class="form__row">
-            <label>Full Name<input name="name" type="text" required autocomplete="name"></label>
-            <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+        <form class="form" id="form" novalidate>
+          <fieldset class="chips">
+            <legend class="mono">I'm interested in</legend>
+            <label><input type="radio" name="interest" value="Family Protection" checked><span>Family Protection</span></label>
+            <label><input type="radio" name="interest" value="Executive Protection"><span>Executive Protection</span></label>
+            <label><input type="radio" name="interest" value="Obedience"><span>Obedience</span></label>
+            <label><input type="radio" name="interest" value="Behaviour"><span>Behaviour</span></label>
+            <label><input type="radio" name="interest" value="PSA Sport / Decoy"><span>PSA Sport</span></label>
+            <label><input type="radio" name="interest" value="Foundation / Board-and-Train"><span>Board &amp; Train</span></label>
+          </fieldset>
+          <div class="form__grid">
+            <label class="field"><input name="name" placeholder=" " required autocomplete="name"><span>Full name</span></label>
+            <label class="field"><input name="phone" type="tel" placeholder=" " required autocomplete="tel"><span>Phone</span></label>
+            <label class="field"><input name="email" type="email" placeholder=" " autocomplete="email"><span>Email (optional)</span></label>
+            <label class="field"><input name="city" placeholder=" " autocomplete="address-level2"><span>City</span></label>
           </div>
-          <label>Email<input name="email" type="email" autocomplete="email"></label>
-          <div class="form__row">
-            <label>I'm interested in
-              <select name="interest">
-                <option>Family Protection Dog</option>
-                <option>Executive Protection Dog</option>
-                <option>Obedience Training</option>
-                <option>Behaviour Rehabilitation</option>
-                <option>PSA Sport / Decoy Training</option>
-                <option>Board &amp; Train</option>
-              </select>
-            </label>
-            <label>City<input name="city" type="text"></label>
+          <label class="field"><textarea name="message" rows="3" placeholder=" "></textarea><span>Tell us about your dog, or the dog you need</span></label>
+          <div class="form__foot">
+            <button type="submit" class="btn"><span>Send enquiry</span><i aria-hidden="true">→</i></button>
+            <p class="form__note mono" id="formNote" aria-live="polite">Opens WhatsApp with your details.</p>
           </div>
-          <label>Tell us about your dog / needs<textarea name="message" rows="4"></textarea></label>
-          <button type="submit" class="btn btn--gold btn--block">Send Enquiry</button>
-          <p class="form__note" id="formNote" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container footer__grid">
+    <div class="wrap footer__top">
       <div>
-        <a href="#top" class="brand brand--footer"><span class="brand__text">WOLFMASTER<em>K9</em></span></a>
-        <p>Elite dog training by Rajender “Wolfmaster Bunty” Chauhan. Protection, obedience, behaviour and PSA sport since 2002.</p>
+        <p class="mono">Wolfmaster K9</p>
+        <p>Protection, obedience, behaviour and PSA sport by Rajender “Wolfmaster Bunty” Chauhan.</p>
       </div>
-      <div>
-        <h5>Programs</h5>
-        <a href="#protection">Family Protection</a>
-        <a href="#protection">Executive Protection</a>
-        <a href="#programs">Obedience</a>
-        <a href="#psa">PSA Sport</a>
-      </div>
-      <div>
-        <h5>Company</h5>
-        <a href="#about">About Bunty</a>
-        <a href="#process">Process</a>
-        <a href="#gallery">Media</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div>
-        <h5>Follow</h5>
-        <a href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/Wolfmasterk9/" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.youtube.com/results?search_query=wolfmaster+k9+rajender+chauhan" target="_blank" rel="noopener">YouTube</a>
-      </div>
+      <nav class="mono" aria-label="Footer">
+        <a href="#philosophy">Philosophy</a><a href="#trainer">Trainer</a><a href="#programs">Programs</a><a href="#dogs">Dogs</a><a href="#psa">PSA</a><a href="#enquire">Enquire</a>
+      </nav>
+      <nav class="mono" aria-label="Social">
+        <a href="https://www.instagram.com/wolfmasterk9_rajender_chauhan/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.facebook.com/Wolfmasterk9/" target="_blank" rel="noopener">Facebook ↗</a>
+        <a href="https://www.youtube.com/results?search_query=wolfmaster+k9+rajender+chauhan" target="_blank" rel="noopener">YouTube ↗</a>
+      </nav>
     </div>
-    <div class="container footer__bottom">
-      <span>© <span id="year"></span> Wolfmaster K9. All rights reserved.</span>
-      <span>Faridabad · Delhi NCR · India</span>
+    <div class="footer__mark" aria-hidden="true"><span>Wolfmaster</span></div>
+    <div class="wrap footer__bottom mono">
+      <span>© <span id="year">2026</span> Wolfmaster K9</span>
+      <span>N 28.41° — E 77.31°</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/919873335698" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+  <a class="wa" href="https://wa.me/919873335698" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
   </a>
 
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

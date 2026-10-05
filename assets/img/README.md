@@ -1,14 +1,31 @@
 # Images
 
-Drop photos here with these exact filenames and they replace the striped placeholders automatically (no code changes needed):
+The 12 photographs are AI-generated art direction made with Higgsfield (GPT Image 2.5, one consistent low-key, amber rim-lit grade).
+They live on Higgsfield's CDN and `index.html` links to them directly. The mapping is in `scripts/images.json`.
 
-| File | Where it shows | Suggested shot |
+## Self-host and compress (recommended before launch)
+
+The raw files are 2K PNGs (several MB each). Run:
+
+```bash
+python3 scripts/self-host-images.py
+```
+
+This downloads every image, writes `assets/img/<name>.webp` (full size) and `<name>-sm.webp` (800px previews),
+and repoints `index.html` at the local files. You need ImageMagick or `cwebp` installed.
+
+## Swapping in real photography
+
+Use real photos wherever you can, especially of Rajender himself. Each image has one job:
+
+| Key | Used for | Brief |
 |---|---|---|
-| `hero.jpg` | Full-screen hero | Bunty working a Malinois, dramatic/low light (landscape, 2400px+) |
-| `hero.mp4` | Optional hero video (uncomment in `index.html`) | 10–20s muted loop of bite work |
-| `bunty-portrait.jpg` | About section | Portrait of Rajender with his dog (4:5) |
-| `band.jpg` | Quote band | Dog mid-leap / bite work (wide) |
-| `malinois.jpg`, `gsd.jpg`, `dutchie.jpg`, `rottweiler.jpg` | Breed cards | Single dog, dark background (3:4) |
-| `psa-decoy.jpg` | PSA section | Bunty in decoy suit catching a dog (4:5) |
-| `g1.jpg` … `g5.jpg` | Media gallery | Best Instagram shots (square) |
-| `cta.jpg` | Bottom call-to-action | Dog at a gate / with family (wide) |
+| `hero` | Full-screen opener | Dog on the right third, dark negative space on the left (21:9) |
+| `dawn` | Trainer chapter | Bunty with a dog. A real photo of him belongs here |
+| `malinois` `gsd` `dutch` `dobe` | Dog lineup | Single dog on black, rim-lit (3:4 / 4:5) |
+| `villa` | The Standard | Dog guarding a home entrance at dusk (16:9) |
+| `psa` | PSA chapter | Floodlit trial field, wide (21:9) |
+| `action` | CTA | Bite work, mid-air (16:9) |
+| `exec` `leash` `puppy` | Program previews | 4:5 |
+
+After self-hosting, overwrite `assets/img/<key>.webp` and `<key>-sm.webp` with the real photos.

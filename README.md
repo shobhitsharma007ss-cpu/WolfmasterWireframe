@@ -1,23 +1,48 @@
-# Wolfmaster K9 Website
+# Wolfmaster K9
 
-Website for **Rajender "Wolfmaster Bunty" Chauhan** and **Wolfmaster K9**, an elite dog-training brand from India.
-The look is dark and premium, modelled on high-end protection-dog sites like Israel Protection K9: black and charcoal, gold accents, bold condensed uppercase headings, full-bleed imagery and scroll-reveal motion.
+Website for **Rajender “Wolfmaster Bunty” Chauhan** and Wolfmaster K9.
 
-It is a static site (HTML/CSS/vanilla JS) with no build step. Open `index.html`, or deploy the folder to Netlify, Vercel or GitHub Pages.
+It is a static site with no build step. Open `index.html` through any web server, or deploy the folder to Netlify, Vercel or GitHub Pages.
 
-## Sections
-Hero, Trust stats, About Bunty, Quote band, Programs, Protection Dogs (breeds + standard), Process, PSA & Events, Accolades, Testimonials, Media/Socials, CTA, Contact, Footer, Floating WhatsApp.
+## Design system
 
-## Before launch: content to confirm or replace
-Items marked in **orange `[ ... ]`** on the page are placeholders:
-- **Photos/video.** See `assets/img/README.md`. Filenames drop straight in.
-- **Accolades.** Exact international awards, titles and media features.
-- **Testimonials.** Real client quotes, used with permission.
-- **Quote** in the band section. Use a real quote from Bunty.
-- **"1000+ dogs trained"** stat. Confirm the number.
-- **YouTube** channel URL. Currently links to a YouTube search.
-- **Phone/email** (`+91 98733 35698`, `wolfmasterk9@gmail.com`). Taken from the public PSA event listing, so confirm before launch.
-- **Location.** Faridabad / Delhi NCR. Add a full address or map if wanted.
+- **Palette.** Warm black `#0a0908`, coal `#11100e`, bone `#efe9df`, dust `#9b9387`. One accent, ember `#e2672f`, used only for markers and states.
+- **Type.** All fonts are self-hosted in `assets/fonts`.
+  - **Archivo Expanded** (variable, `font-stretch: 125%`): display headlines, set tight.
+  - **Instrument Serif Italic**: the emotional word in each headline.
+  - **Geist**: body text. **Geist Mono**: small labels and metadata.
+- **Imagery.** One cinematic grade throughout: low-key, amber rim light, film grain. A live grain overlay ties the photos and UI together. See `assets/img/README.md`.
 
-## Contact form
-There is no backend yet. Submitting the form opens WhatsApp with the enquiry pre-filled, sent to the number set in `assets/js/main.js` (`WHATSAPP_NUMBER`). To get email delivery instead, swap in Formspree or Netlify Forms.
+## Motion
+
+GSAP, ScrollTrigger, SplitText and Lenis are vendored in `assets/vendor`. Every movement has a job:
+
+| Moment | Job |
+|---|---|
+| Preloader counter → curtain | Covers font and hero-image load, then reveals the hero |
+| Hero lines rise from a mask; image settles | First impression; the image sinks and the type lifts as you leave |
+| Manifesto words brighten as you scroll | Sets a reading pace |
+| Marquee speeds up with scroll velocity | Shows the disciplines and responds to the visitor |
+| Image chapters open from an inset | Marks the start of each chapter |
+| Program rows: the preview image follows the cursor | Previews each program without leaving the list |
+| Dogs: pinned horizontal lineup + progress bar | Browsing a lineup, with your position shown |
+| Process line draws and step markers light up | Shows progress through the process |
+| Footer wordmark rises | Closes the page |
+
+The site degrades cleanly:
+
+- **No JS.** All content is visible and the dog lineup becomes a native swipe.
+- **Reduced motion.** Lenis is off, there are no scroll animations, and nothing is hidden.
+- **Touch.** No custom cursor or magnetic effects.
+
+## Content to confirm before launch
+
+- **Phone / email** (`+91 98733 35698`, `wolfmasterk9@gmail.com`). Taken from the public PSA event listing.
+- **YouTube.** Currently links to a YouTube search. Replace it with the channel URL.
+- **Awards / international titles.** Add them in the PSA record list. There is a commented template in `index.html`.
+- **Testimonials.** A commented-out section is ready for real, approved quotes.
+- **Photography.** The current images are AI-generated stand-ins. Replace them with real shoots, especially for the trainer section.
+
+## Enquiry form
+
+There is no backend. The form opens WhatsApp with the enquiry pre-filled. The number is set in `assets/js/main.js` (`WHATSAPP`).

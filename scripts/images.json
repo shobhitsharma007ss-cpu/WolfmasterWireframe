@@ -1,0 +1,17 @@
+{
+  "base": "https://d8j0ntlcm91z4.cloudfront.net/user_3BAXePEnkazlcLuBegXPULitm9A/",
+  "images": {
+    "hero":     { "file": "hf_20261005_084426_3af97fd1-8246-4719-8a52-5fd19acb2244", "width": 2400 },
+    "malinois": { "file": "hf_20261005_084427_f18b8ba6-2092-425e-8f72-b6a49477fd1a", "width": 1400 },
+    "action":   { "file": "hf_20261005_084254_a9151537-ba18-47e4-bc92-e31ae6e37974", "width": 2400 },
+    "dawn":     { "file": "hf_20261005_084427_97fa7049-3609-403c-b1aa-54b55bbc49d7", "width": 2400 },
+    "gsd":      { "file": "hf_20261005_084254_8b51b76a-778b-486d-ae38-faaa03838ff4", "width": 1400 },
+    "dutch":    { "file": "hf_20261005_084428_3e10776a-8e9a-4e64-9595-dd5bfd305e76", "width": 1400 },
+    "dobe":     { "file": "hf_20261005_084501_559f9b4d-77fb-495f-a8cc-f04ced742a6b", "width": 1400 },
+    "villa":    { "file": "hf_20261005_084254_fa48e9de-16e5-4a38-aae1-f204495ac7ca", "width": 2400 },
+    "leash":    { "file": "hf_20261005_084500_46d91bc3-54e4-45a0-8154-4b25d3044f11", "width": 1400 },
+    "psa":      { "file": "hf_20261005_084500_6f1ade1c-d4d5-4b64-8b67-9b8c425bc1fc", "width": 2400 },
+    "exec":     { "file": "hf_20261005_084500_ec7385c8-4449-4e96-8545-4f66a6498ffd", "width": 1400 },
+    "puppy":    { "file": "hf_20261005_084255_72cba74c-4a63-4de8-b19e-0beb8b39e9c8", "width": 1400 }
+  }
+}
