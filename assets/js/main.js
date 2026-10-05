@@ -96,12 +96,32 @@
     });
   });
 
+  /* ---------- Character-roll links ---------- */
+  document.querySelectorAll("[data-roll]").forEach(function (a) {
+    var text = a.textContent;
+    a.setAttribute("aria-label", text.trim());
+    var roll = document.createElement("span");
+    roll.className = "roll";
+    roll.setAttribute("aria-hidden", "true");
+    Array.prototype.forEach.call(text, function (c, i) {
+      var ch = document.createElement("span");
+      ch.className = "ch";
+      ch.style.setProperty("--i", i);
+      ch.textContent = c;
+      roll.appendChild(ch);
+    });
+    a.textContent = "";
+    a.appendChild(roll);
+  });
+
   var loader = document.querySelector(".loader");
   if (!hasGSAP) { if (loader) loader.remove(); return; }
 
   gsap.registerPlugin(ScrollTrigger);
   var hasSplit = !!window.SplitText;
   if (hasSplit) gsap.registerPlugin(SplitText);
+  var hasScramble = !!window.ScrambleTextPlugin;
+  if (hasScramble) gsap.registerPlugin(ScrambleTextPlugin);
 
   /* ---------- Smooth scroll ---------- */
   if (!reduced && window.Lenis) {
@@ -211,6 +231,31 @@
     ScrollTrigger.refresh();
   }
   (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(splitHeadings);
+
+  /* ---------- Labels decode like a field dossier as they enter ---------- */
+  if (hasScramble) {
+    var labelTargets = [];
+    document.querySelectorAll(".label").forEach(function (lab) {
+      var node = lab.lastChild;
+      if (node && node.nodeType === 3 && node.textContent.trim()) {
+        var span = document.createElement("span");
+        span.className = "label__txt";
+        span.textContent = node.textContent.trim();
+        lab.replaceChild(span, node);
+        labelTargets.push(span);
+      }
+    });
+    document.querySelectorAll(".dossier dt, .record .mono, .figure dt").forEach(function (el) { labelTargets.push(el); });
+    labelTargets.forEach(function (el) {
+      var final = el.textContent;
+      ScrollTrigger.create({
+        trigger: el, start: "top 92%", once: true,
+        onEnter: function () {
+          gsap.to(el, { duration: 1.1, ease: "none", scrambleText: { text: final, chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/", revealDelay: 0.25, speed: 0.5 } });
+        }
+      });
+    });
+  }
 
   /* ---------- Paragraph fades ---------- */
   gsap.set("[data-fade]", { y: 36, opacity: 0 });

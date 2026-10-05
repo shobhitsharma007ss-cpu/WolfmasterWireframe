@@ -6,7 +6,7 @@ It is a static site with no build step. Open `index.html` through any web server
 
 ## Design system
 
-- **Palette.** Warm black `#0a0908`, coal `#11100e`, bone `#efe9df`, dust `#9b9387`. One accent, ember `#e2672f`, used only for markers and states.
+- **Palette.** Graphite and bone, monochrome first: void `#0b0b0a`, coal `#121310`, bone `#e8e4da`, dust `#8d8a80`. One quiet military accent, field olive `#a3a17c`, used only for numerals, dates and labels.
 - **Type.** All fonts are self-hosted in `assets/fonts`.
   - **Archivo Expanded** (variable, `font-stretch: 125%`): display headlines, set tight.
   - **Instrument Serif Italic**: the emotional word in each headline.
@@ -15,7 +15,7 @@ It is a static site with no build step. Open `index.html` through any web server
 
 ## Motion
 
-GSAP, ScrollTrigger, SplitText and Lenis are vendored in `assets/vendor`. Every movement has a job:
+GSAP, ScrollTrigger, SplitText, ScrambleText and Lenis are vendored in `assets/vendor`. Every movement has a job:
 
 | Moment | Job |
 |---|---|
@@ -28,6 +28,8 @@ GSAP, ScrollTrigger, SplitText and Lenis are vendored in `assets/vendor`. Every 
 | Dogs: pinned horizontal lineup + progress bar | Browsing a lineup, with your position shown |
 | Process line draws and step markers light up | Shows progress through the process |
 | Footer wordmark rises | Closes the page |
+| Mono labels decode (ScrambleText) | A field-dossier feel that marks each new section |
+| Links roll their characters on hover | Shows the link will respond, without colour |
 
 The site degrades cleanly:
 
